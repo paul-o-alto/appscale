@@ -6,8 +6,8 @@
 set -e
 
 # Defaults values for repositories and branches.
-APPSCALE_REPO="git://github.com/AppScale/appscale.git"
-APPSCALE_TOOLS_REPO="git://github.com/AppScale/appscale-tools.git"
+APPSCALE_REPO="git://github.com/paul-o-alto/appscale.git"
+APPSCALE_TOOLS_REPO="git://github.com/paul-o-alto/appscale-tools.git"
 APPSCALE_BRANCH="master"
 APPSCALE_TOOLS_BRANCH="master"
 FORCE_UPGRADE="N"
