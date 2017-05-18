@@ -46,6 +46,7 @@ case "$1" in
         installtornado
         installpycrypto 
         installflexmock
+        installpio
         installpycapnp
         installzookeeper
         postinstallzookeeper

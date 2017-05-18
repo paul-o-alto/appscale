@@ -296,6 +296,20 @@ installgems()
     gem install simplecov ${GEMOPT}
 }
 
+installpio()
+{
+    PIO_VER=0.11.0
+    PIO_DIR="${APPSCALE_HOME}/MLService/pio"
+    mkdir -p ${PIO_DIR}
+    rm -rf "${PIO_DIR}/pio"
+
+    PIO_PACKAGE="apache-predictionio-${PIO_VER}-incubating.tgz"
+    PIO_PACKAGE_MD5="317d3e915f58f009b907bc97d2a6a8d5"
+    cachepackage ${PIO_PACKAGE} ${PIO_PACKAGE_MD5}
+    tar xzf "${PACKAGE_CACHE}/${PIO_PACKAGE}" -C ${PIO_DIR}
+    mv -v ${PIO_DIR}/pio-${PIO_VER} ${PIO_DIR}/pio
+}
+
 installphp54()
 {
     # In Precise we have a too old version of php. We need at least 5.4.
