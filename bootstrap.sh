@@ -12,7 +12,7 @@ APPSCALE_BRANCH="master"
 APPSCALE_TOOLS_BRANCH="master"
 FORCE_UPGRADE="N"
 UNIT_TEST="n"
-GIT_TAG="dev"
+GIT_TAG=""
 
 usage() {
     echo "Usage: ${0} [--repo <repo>][--tools-repo <repo>][-t]"
